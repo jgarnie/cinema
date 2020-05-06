@@ -6,16 +6,14 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
+  
 }
-
 body {
   margin: 0;
 }
-
 .sidebar {
   position: fixed;
   display: flex;
@@ -41,7 +39,6 @@ body {
     padding-top: 0.4rem;
     font-size: 1rem;
     
-    
   }
   &__links--up{
     text-transform: uppercase;
@@ -65,12 +62,11 @@ body {
       border-radius: 5px;
     }
   }
-  
-
-
 
 .podcast {
   margin-left: 16rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .podcast-heading {
@@ -79,7 +75,7 @@ body {
   
   height: 5rem;
   padding: 1rem 2.5rem;
-  
+  margin-bottom: 1rem;
   background-color: $color-bg-secondary;
 
   &__logo {
@@ -97,6 +93,42 @@ body {
     font-size: 2rem;
     line-height: 2rem;
     text-transform: uppercase;
+  }
+}
+.podcast-158{
+  height: 5rem;
+  padding: 0.5rem 2.5rem;
+  margin-bottom: 3rem;
+  &__wrap{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    border-top: 1px solid grey;
+  }
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+  &__wrap__number{
+    font-size: 1.5rem;
+    color:$color-text-secondary;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.4rem;
+    & h1{
+      padding:0;
+      margin: 0;
+    }
+  }
+  &__wrap__name{
+   & h1{
+     margin: 0;
+   }
+  }
+  &__date{
+    & p{
+      margin-top: 0;
+    }
   }
 }
 
